@@ -1,0 +1,28 @@
+{
+  "name": "tallstackui/tallstackui",
+  "description": "Tall Stack UI Kit",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Amritpal Singh",
+      "email": "boparaiamrit@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "livewire/livewire": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "TallStackUI\\TallStackUI\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TallStackUI\\TallStackUI\\TallStackUIServiceProvider"
+      ]
+    }
+  }
+}
