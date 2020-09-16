@@ -36,10 +36,10 @@ class FormComponent extends Component
     }
     
     /**
-     * @param       $field
-     * @param null  $rules
-     * @param array $messages
-     * @param array $attributes
+     * @param string     $field
+     * @param array|null $rules
+     * @param array      $messages
+     * @param array      $attributes
      *
      * @return array|void
      * @throws ValidationException
@@ -53,6 +53,5 @@ class FormComponent extends Component
             
             throw $e;
         }
-        
     }
 }

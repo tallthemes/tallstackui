@@ -6,7 +6,6 @@ use Livewire\Component;
 
 class Input extends Component
 {
-    public $_id;
     public $name;
     public $label;
     public $value;

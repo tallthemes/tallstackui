@@ -1,8 +1,8 @@
-<div class="mb-4">
+<div class="mb-6 h-20">
     @if(!empty($label))
         <label class="block text-sm font-medium leading-5 text-gray-700">{{ $label }}</label>
     @endif
-    <div class="mt-1 relative rounded-md shadow-sm">
+    <div class="my-1 relative rounded-md shadow-sm">
         <input type="{{ $type }}"
                class="block w-full outline-none focus:outline-none appearance-none bg-white border border-gray-200 rounded-md text-base py-2 px-4 leading-6"
                name="{{ $name }}"
@@ -23,8 +23,8 @@
                 </svg>
             </button>
         @endif
-        @foreach($fieldErrors as $error)
-            <span class="error">{{ $error }}</span>
-        @endforeach
     </div>
+    @foreach($fieldErrors as $error)
+        <span class="block text-xs italic leading-3 text-red-600">{{ $error }}</span>
+    @endforeach
 </div>

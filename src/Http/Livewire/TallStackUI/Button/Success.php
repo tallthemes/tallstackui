@@ -2,9 +2,7 @@
 
 namespace TallStackUI\TallStackUI\Http\Livewire\TallStackUI\Button;
 
-use Livewire\Component;
-
-class Success extends Component
+class Success extends Button
 {
     public function render()
     {
